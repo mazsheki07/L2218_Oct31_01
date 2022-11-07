@@ -50,6 +50,15 @@ view: orders {
     drill_fields: [detail*]
   }
 
+  dimension: order_count_t {
+    type: number
+    sql: ${TABLE}.order_count ;;
+  }
+
+  measure: total_order_count_t {
+    type: sum
+    sql: ${order_count_t} ;;
+  }
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [

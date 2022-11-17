@@ -29,6 +29,11 @@ explore: div_stylebackgroundimage_urldatatexthtmlimgsrc1 {}
 
 explore: imgsrc1onerroralert2 {}
 
+explore: period_over_period{
+  label: "PoP Method 2: Allow users to choose periods with parameters"
+  always_filter: {
+    filters: [  period_over_period.choose_comparison: "" , period_over_period.choose_breakdown: "" ]
+  }}
 
 explore: account {}
 
